@@ -1,8 +1,14 @@
 // import React from 'react';
-import { DatePicker } from 'antd';
+import Footer from "./components/Footer"
+import ShoesStore from "./components/ShoesStore"
 
 const App = () => {
-  return <DatePicker />;
-};
+  return (
+    <div className="flex flex-col h-screen justify-between">
+      <ShoesStore />
+      <Footer />
+    </div>
+  )
+}
 
-export default App;
+export default App
